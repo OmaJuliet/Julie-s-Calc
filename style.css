@@ -1,0 +1,123 @@
+.bod {
+    background-image: url('moonlight.jpg');
+    background-size: cover; 
+}
+
+.container {
+    background: rgb(209, 207, 207);
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 23px 10px rgba(153, 153, 153, 1);
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 20px;
+}
+
+#display {
+    background: white;
+    text-align: right;
+    height: 55px;
+    line-height: 60px;
+    padding: 16px 8px;
+    font-size: 25px;
+} 
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin-left: 10px;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.button{
+    border: 0.2px solid #999;
+    border-radius: 50%;
+    width: 85px;
+    height: 90px; 
+    line-height: 90px;
+    text-align: center;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#down {
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    color: white;
+    background: rgb(155, 145, 145);
+    transition: 0.4s ease-in-out;
+    transform: translateY(-3px);
+}
+
+#del {
+    color: white;
+    background-color: rgb(241, 37, 37);
+}
+
+#del:hover {
+    background: rgb(250, 65, 65);
+}
+
+#equalto {
+    color: white;
+    background: rgb(28, 150, 28);
+    width: 175px;
+    border-radius: 50px;
+    font-size: 2rem;
+}
+
+#equalto:hover {
+    background-color: green;
+}
+
+
+.calc-title {
+    height: 50px;
+    line-height: 50px;
+}
+
+.calc-title b {
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace
+}
+
+.calc-title i {
+    font-size: 24px;
+    float: right;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+
+.dark-mode { 
+    background-image: url('calc img2.jpg');
+    transition: 0.8s ease-in;
+}
+
+
+@media (width: 360px){
+    .buttons {
+        margin-left: 0px; 
+    }
+    .button {
+        width: 82px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 375px){
+    #equalto {
+        width: 170px;
+    }
+}
